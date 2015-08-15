@@ -1,4 +1,5 @@
 /*** general styling */
+
 .ui-page.ui-body-c{
 background:url(images/bg.png);
 box-shadow:  0px 0px 30px 5px rgba(107, 105, 105, 0.3) inset,
@@ -9,6 +10,7 @@ box-shadow:  0px 0px 30px 5px rgba(107, 105, 105, 0.3) inset,
 .ui-icon.ui-icon-arrow-r {
 background-color:rgb(136, 111, 110);
 }
+
 .ui-corner-all, 
 .ui-corner-top,
 .ui-corner-bottom,
@@ -33,6 +35,7 @@ background: -ms-linear-gradient(top,  #654644 0%,#331c1b 100%); /* IE10+ */
 background: linear-gradient(top,  #654644 0%,#331c1b 100%); /* W3C */
 color:#fff !important;
 }
+
 .ui-content .choice_list  .ui-btn-active .ui-link-inherit,
 .ui-btn-down-c a.ui-link-inherit,
 #home .ui-btn-down-c a.ui-link-inherit{
@@ -46,19 +49,19 @@ height: auto; width: auto;
 -moz-box-sizing: border-box;
 box-sizing: border-box;
 }
+
 .ui-grid-a .ui-block-a, .ui-grid-a .ui-block-b {
     width: 48%;
     padding:1%;
 }
 
 
-
-
-
 /* title bar */
+
 .ui-header.ui-bar-a{
 background:url(images/header_bg.png);
 }
+
 .ui-header .ui-title {
 text-indent:-9999px;
 font-size:0px;
@@ -72,12 +75,17 @@ margin:0px;
 background:rgba(255, 255, 255, 0.1);
 box-shadow:none;
 }
+
 .ui-header  .ui-btn-hover-a {
 background:rgba(0, 0, 0, 0.3);
 box-shadow:none;
 }
 
-
+#back {
+	color: #FF6600;
+	text-decoration: none;
+	font-size: 25px;
+}
 
 
 /*** home **/
@@ -91,69 +99,36 @@ font-size:0px;
 margin:50px auto 0 auto;
 }
 
-#home .ui-grid-a div{
-	background-color: #FFEFCC;
+#home .ui-grid-a  {
+	background-color: #FFFFFFF;
+	max-width: 100%;
+}
+
+#gridtext {
+	color: black;
+	font-family: Verdana;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+#firstgrid {
+	margin-top: 100px;
+}
+
+#thirdgrid {
+	margin-top: 100px;
+	margin-bottom: 80px;
 }
 
 
-/** Chose the town **/
+/** information **/
 
-#choisir_ville .choice_list h1{
-background-position: 0 -72px;
-margin-bottom:20px;
-}
-#choisir_ville .choice_list a{
-padding-top:10px;
-color:rgb(63, 41, 39);
-}
-#choisir_ville .ui-listview-filter a{
-padding-top:0px;
-}
-
-
-/** choix du restaurant **/
-#choisir_restau .choice_list h1{
-background-position: 0 -132px;
-margin:10px auto 20px auto;
-}
-#choisir_restau .choice_list a{
-padding-top:10px;
-color:rgb(63, 41, 39);
-}
-
-#choisir_restau .classement{
-display:inline-bloc;
-background:url(images/pagination.png) no-repeat  0 -182px;
-height:22px;
-text-indent:-999px;
-font-size:0px;
-}
-
-#choisir_restau .one{
-width:30px;
-}
-#choisir_restau .two{
-width:55px;
-}
-#choisir_restau .three{
-width:75px;
-}
-#choisir_restau .four{
-width:99px;
-}
-
-
-
-
-
-
-
-/** restau **/
 #restau_infos,
 #contact_infos {
 color:rgb(63, 41, 39);
 font-size:14px;
 }
+
 #restau_infos h1,
 #contact_infos h2,
 #notation h2{
@@ -167,9 +142,11 @@ margin:0 auto 5px auto;
 #contact_infos p{
 margin:2px auto 5px auto;
 }
+
 #restau_infos ul{
 padding:0 0 0 10px;
 }
+
 #restau_infos ul  li{
 list-style-type:square;
 margin-left:5px;
@@ -178,6 +155,7 @@ margin-left:5px;
 #restau_infos .ui-block-b .ui-btn {
 font-size:12px;
 }
+
 #restau_infos .ui-block-b .ui-btn-inner{
 padding:5px;
 }
@@ -193,44 +171,46 @@ background: rgb(63, 41, 39) url(images/maps.png) no-repeat;
 background: rgb(63, 41, 39) url(images/phone.png) no-repeat;
 }
 
-/** add the stars to the drop down */
-#note_utilisateur-menu a{
-padding-left:100px;
-position:relative;
+
+/*** Menu **/
+
+#menu .choice_list {
+	margin-top: 100px;
 }
 
-#note_utilisateur-button span.ui-btn-text{
-background:url(images/pagination.png) no-repeat;
-} 
+#menu .choice_list h1 {
+	font-size: 40px;
+	font-family: Verdana;
+	text-align: center;
+}
 
-#note_utilisateur-button span.ui-btn-inner{
-	padding-left:5px;
-} 
+#menu .choice_list h3 {
+	font-size: 20px;
+	font-family: Verdana;
+}
 
-#note_utilisateur-menu li a:before{
-content: "   ";
-display:inline-block;
-width:115px;
-height:20px;
-background:url(images/pagination.png) no-repeat;
-position:absolute;
-left:0px;
+#menu .choice_list a {
+	font-size: 15px;
+	font-family: Verdana;
+	text-decoration: none;
+	color: black;
 }
-.one #note_utilisateur-button span.ui-btn-text,
-#note_utilisateur-menu li a:before{
-background-position: -75px -182px;
-}
-.two #note_utilisateur-button span.ui-btn-text,
-#note_utilisateur-menu li + li a:before{
-background-position: -52px -182px;
-}
-.three #note_utilisateur-button span.ui-btn-text,
-#note_utilisateur-menu li + li +li a:before{
-background-position: -27px -182px;
-}
-.four #note_utilisateur-button span.ui-btn-text,
-#note_utilisateur-menu li + li +li +li a:before{
-background-position: -2px -182px;
+
+#menu .choice_list img {
+	width: 300px;
+	height: 175px;
 }
 
 
+/*** Feedback **/
+
+#fb {
+	text-align: center;
+	font-family: Verdana;
+	font-size: 20px;
+	margin-top: 100px;
+}
+
+#collapsible {
+	margin-top: 100px;
+}

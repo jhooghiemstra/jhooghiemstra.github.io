@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+
+<!-- Joyce Hooghiemstra - 215213627 -->
+
+<html> 
+	<head>
+		<meta charset="UTF-8">	
+		
+		<title>Holland House</title> 
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		
+		<link rel="apple-touch-icon" href="images/launch_icon_57.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="images/launch_icon_72.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="images/launch_icon_114.png" />
+		
+		<link rel="stylesheet" href="jquery.mobile.structure-1.0.1.css" />
+		<link rel="stylesheet" href="jquery.mobile-1.0.1.css" />
+		<link rel="stylesheet" href="custom.css" />
+		
+		<script src="js/jquery-1.7.1.min.js"></script>
+		<script src="js/jquery.mobile-1.0.1.min.js"></script>
+	</head>
+	
+	<body> 
+		
+		<!-- Start page -->
+		<div data-role="page" id="home" data-theme="c">
+
+			<!-- Create header for back button -->
+			<div data-role="header">
+				<a href="index.html" rel="external" class="ui-btn" id="back">Back</a>
+				<h1>Holland House</h1>
+			</div>
+		
+			<div id="branding"> 
+				<h1>Holland House</h1>
+			</div> 
+		
+			<div data-role="content" data-position="fixed">
+				<h3 id="fb">Feedback</h3>
+			</div>
+			
+			<!-- Start form -->
+			<div role="main" class="ui-content">
+				<form method="post" action="demoform.asp">
+				
+					<!-- Create field -->
+					<div class="ui-field-contain">
+					
+						<!-- Create text-input field -->
+						<label for="fullname">Full name:</label>
+						<input type="text" name="fullname" id="fullname">	
+
+						<!-- Create text-input field -->						
+						<label for="contact">Contact Information:</label>
+						<input type="text" name="contact" id="contact">
+						
+						<!-- Create text-input area -->
+						<label for="feedback">Feedback:</label>
+						<textarea name="feedback" id="feedback"></textarea>
+					</div>
+					
+					<!-- Create the submit button -->
+					<input type="submit" data-inline="true" value="Submit" >
+				
+				<!-- End of form -->
+				</form>
+			</div>
+			
+			<!-- Adding in a footer -->
+			<div data-role="footer" position="fixed" >
+				<h1>&copy; Joyce Hooghiemstra - Mobile Computing - SIT313 - 2015</h1>
+			</div>
+			
+		</div>
+	</body>
+</html>
